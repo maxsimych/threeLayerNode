@@ -1,7 +1,7 @@
 import { Schema, model } from 'mongoose';
-import type { IGhContact, IGhContactModel } from './ghContact.interface';
+import type { IContact, IContactModel } from './contact.interface';
 
-const GhContactSchema = new Schema({
+const ContactSchema = new Schema({
   username: {
     type: String,
     required: true,
@@ -14,5 +14,5 @@ const GhContactSchema = new Schema({
   email: String
 }, { timestamps: true })
 
-const GhContactModel = model<IGhContact, IGhContactModel>('GhContact', GhContactSchema);
-export { GhContactModel };
+const ContactModel = model<IContact, IContactModel>('Contact', ContactSchema);
+export { ContactModel };

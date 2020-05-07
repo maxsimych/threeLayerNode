@@ -1,15 +1,15 @@
 import { container } from 'tsyringe';
-import { GhContactModel } from 'src/component/ghContact/ghContact.model';
+import { ContactModel } from 'src/component/contact/contact.model';
 import { graphql } from '@octokit/graphql';
 import { ObjectId } from 'mongodb';
 import {
-  ghContactModelSymbol, graphqlSymbol, objectIdSymbol, gh_tokenSymbol
+  contactModelSymbol, graphqlSymbol, objectIdSymbol, gh_tokenSymbol
 } from './iocContainer.types';
 import { GH_TOKEN } from 'src/config';
-// import type { IGhContactModel, ObjectIdConstructor } from '../component/ghContact/ghContact.interface';
+// import type { IContactModel, ObjectIdConstructor } from '../component/contact/contact.interface';
 
-container.register(ghContactModelSymbol, {
-  useValue: GhContactModel
+container.register(contactModelSymbol, {
+  useValue: ContactModel
 });
 container.register(graphqlSymbol, {
   useValue: graphql

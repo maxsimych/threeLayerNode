@@ -1,5 +1,6 @@
 import express from 'express';
 import 'reflect-metadata';
+import 'module-alias/register';
 import { loader } from './loader';
 import './iocContainer/iocContainer.config';
 import './config';

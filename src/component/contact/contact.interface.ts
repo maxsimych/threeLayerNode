@@ -21,7 +21,7 @@ export interface IEditBody {
 
 export type ObjectIdConstructor = new (str: string) => ObjectId;
 
-export interface IGhContact extends Document {
+export interface IContact extends Document {
   username: string;
   name?: string,
   avatarUrl?: string,
@@ -32,5 +32,5 @@ export interface IGhContact extends Document {
   updatedAt?: Date
 }
 
-export type IGhContactModel = Model<IGhContact>;
+export type IContactModel = Model<IContact>;
 
