@@ -1,6 +1,6 @@
 import bodyParser from 'body-parser';
 import cors from 'cors';
-import { router } from 'src/component/contact/contact.router';
+import { router } from 'src/components/contact/contact.controller';
 import type { Response, Request, Application } from 'express';
 
 export const expressLoader = (app: Application): Application => {

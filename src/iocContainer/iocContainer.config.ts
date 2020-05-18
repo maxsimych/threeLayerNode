@@ -1,5 +1,5 @@
 import { container } from 'tsyringe';
-import { ContactModel } from 'src/component/contact/contact.model';
+import { ContactModel } from 'src/components/contact/contact.model';
 import { graphql } from '@octokit/graphql';
 import { ObjectId } from 'mongodb';
 import {
